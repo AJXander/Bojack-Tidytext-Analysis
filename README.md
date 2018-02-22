@@ -9,4 +9,4 @@ Finally, the processing of subtitle files was inspired by <a href="http://tamasz
 
 The first steps will be a basic aggregation of text data, and summary statistics including a TF-IDF analysis of the show and by series.
 
-As a further challenge, I will transcribe the conversations and identify speakers and listeners in order to evaluate character interactions and dynamics over the course of the series.
+As a further challenge, I will annotate the conversations and identify speakers and listeners as metadata in order to evaluate character interactions and dynamics over the course of the series, as well as specific character sentiments.
