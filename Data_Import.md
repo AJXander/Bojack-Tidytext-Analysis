@@ -1030,3 +1030,9 @@ am able to find scripts, as opposed to SRT files, for the show. From
 this, I intend to develop a Shiny App allowing a user to examine each
 character’s interactions by episode and season, looking at frequency and
 sentiment of interactions with other characters.
+
+-----
+
+The [next page](Frequency_Analysis.Rmd) will be a simple frequency
+analysis of terms in the show, to see if the most basic application of
+TidyText can generate useful information from a raw text dataset.

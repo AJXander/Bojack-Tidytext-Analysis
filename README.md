@@ -27,6 +27,8 @@ I found unofficial SRT files of the show, which provides time-stamped dialogue t
 
 This transcription has some issues, including spelling errors and misunderstood dialogue; credits to the users who created the subtitles; overlapping two characters' dialogue into a single observation; and no indication of who has spoken which line.
 
+[Data Import Page](Data_Import.Rmd)
+
 ## Transcription
 
 In order to carry out analysis of the characters based on their dialogue, we need to know not only who speaks, but who listens to them. This will be further examined, with additional guidance provided by [Frank Fischer](https://github.com/lehkost) on how to represent these interactions in a standardised way.
@@ -35,16 +37,12 @@ In order to carry out analysis of the characters based on their dialogue, we nee
 Break down by season, by episode, (and by time) index within the episode.
 
 1. Clean data, filter our the non-dialogue entries.
-
 2. Mutate Season and Episode_Num into a factor variable.
-
 3. Semantic Analysis for all episodes.
-
 4. Visualise. Line chart or column chart for sentiment. Aggregate, or positive and negative as separate bars.
-
 5. Summarise and analyse.
 
-* Term Frequency - By season
+[Term Frequency](Frequency_Analysis.Rmd)
 * Term Relevance - By season
 * Frequency of characters names being mentioned?
 
@@ -66,7 +64,7 @@ Shiny Browser to examine:
 4. Sentiment per episode, or per season - Plot of the sentiment of an episode or a season.
 5. Word frequency - Per character, or per episode, or per season.
 
-## Challenging analytics - Requires transcription and learning new packages.
+## Challenging analytics - Dependent on Transcription, Learning New Packages, and Network Science
 
 * Show character relationship networks between the primary characters
 * Edge width by frequency of interaction (Single episode? Cumulative Total? Weighted, so more recent matters more than less recent?
