@@ -11,40 +11,7 @@ episodes where the end of show lyrics are included.
 
 These lyrics have also likely skewed the term frequencies with repeated
 lines, but this can be confirmed when the lines are manually filtered
-while transcribing the speakers of each line of
-dialogue.
-
-``` r
-s1Raw <- read.subtitles.season("Bojack SRT/Bojack S1 SRT/") %>% subDataFrame()
-```
-
-    ## Read: 12 episodes
-
-``` r
-s2Raw <- read.subtitles.season("Bojack SRT/Bojack S2 SRT/") %>% subDataFrame()
-```
-
-    ## Read: 12 episodes
-
-``` r
-s3Raw <- read.subtitles.season("Bojack SRT/Bojack S3 SRT/") %>% subDataFrame()
-```
-
-    ## Read: 12 episodes
-
-``` r
-s4Raw <- read.subtitles.season("Bojack SRT/Bojack S4 SRT/") %>% subDataFrame()
-```
-
-    ## Read: 12 episodes
-
-``` r
-all_s_Raw <- rbind(s1Raw,s2Raw,s3Raw,s4Raw) %>%
-  filter(!str_detect(.$Text, "7ed")) %>% # Removes the sync information.
-  filter(!str_detect(.$Text, "[0-9]x")) %>% # Removes episode title
-  rename(Line = ID) %>% # Avoids Excel error of reading CSV files as corrupted if column 1 is named "ID"
-  mutate(Line = str_remove_all(Line, "\\D"))
-```
+while transcribing the speakers of each line of dialogue.
 
 ``` r
 tidy_bojack <- all_s_Raw %>% unnest_tokens(word, Text)
@@ -91,7 +58,7 @@ tidy_bojack %>% filter(!word %in% c("bojack","diane","peanutbutter","todd")) %>%
         ggtitle("Bojack Horseman - Term Frequency Plot", "All Seasons - Character Names Dropped")
 ```
 
-![](Frequency_Analysis_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](Frequency_Analysis_files/figure-gfm/All%20Seasons%20-%20No%20Characters-1.png)<!-- -->
 
 This is quite interesting as the general terms seem non-specific.
 However, the repeated use of “love” seems odd given the general themes
