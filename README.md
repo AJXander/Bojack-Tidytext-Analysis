@@ -19,7 +19,7 @@ My ultimate goal is to develop a network map, indicating the fluctuating relatio
 
 The initial inspiration was the [Tidy Text Mining](https://www.tidytextmining.com/tidytext.html) package and the associated course on [Datacamp](https://www.datacamp.com/courses/sentiment-analysis-in-r-the-tidy-way). In addition to this, an intense course with [Eduardo Ariño de la Rubia](https://github.com/earino) on Unstructured Text Analysis, at CEU in Budapest, gave further direction.
 
-## [Data Acquistion](./Data_Import.html)
+## [Data Acquistion](../../Data_Import.html)
 
 The processing of subtitle files was inspired by [Tamas Szilyagi's Tidytext analysis of Rick & Morty](http://tamaszilagyi.com/blog/a-tidy-text-analysis-of-rick-and-morty/).
 
