@@ -1,3 +1,7 @@
+---
+output: rmarkdown::github_document
+---
+
 ```{r setup, include=FALSE}
 library(knitr)
 knitr::opts_chunk$set(echo = TRUE)
@@ -40,8 +44,8 @@ all_s_Raw %>% head(20) %>% kable("html") %>%
   kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
-At this point, the project is diverging into two paths.
+At this point, the project is diverging into two paths:
 
-The first will be a holistic analysis of the raw text, without assignation to a specific character. This can tell us general information about the show, for example, whether the sentiment of an episode follows a trend from one episode, or one series, to the next.
+The first will be a holistic analysis of the raw text, without assignation of lines to a specific character. This can tell us general information about the show, for example, whether the sentiment of an episode follows a trend from one episode, or one series, to the next.
 
-The second will be to manually transcribe the dialogue, recording the sender and receivers of each line of dialogue. This will be a time-consuming process as there is no simple way to manage this unless I am able to find scripts, as opposed to SRT files, for the show.
+The second will be to manually transcribe the dialogue, recording the sender and receivers of each line of dialogue. This will be a time-consuming process as there is no simple way to manage this unless I am able to find scripts, as opposed to SRT files, for the show. From this, I intend to develop a Shiny App allowing a user to examine each character's interactions by episode and season, looking at frequency and sentiment of interactions with other characters.
