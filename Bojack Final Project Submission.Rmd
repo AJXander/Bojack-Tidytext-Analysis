@@ -1,0 +1,63 @@
+---
+title: "BoJack Analysis Summary"
+author: "Baldwin - 182491"
+date: "21 March 2018"
+output: html_document
+---
+
+# Bojack Horseman Text Analysis and Character Relationship Networks
+
+As part of my studies, I am completing an analysis of a large body of unstructured text data, using the TidyText package for R, and semantic analysis.
+
+As raw data for this study, I have acquired SRT files for every episode of the comedy, _Bojack Horseman_.
+These SRT files contain all of the dialogue in the show, timestamped, however characters are not identified.
+
+Initially, I will run simple analytics on the entirety of the SRT files.
+
+Subsequently, I will watch each episode, annotating the CSV files manually with the speaker and listeners to each line.
+I am determining how best to do this, including numbering conversations, and identifying cutaway scenes such as flashbacks, or humorous asides.
+
+I then intend to develop a Shiny app to interactively examine the episodes. It is unrealistic to specifically produce each episode's summary analysis, and each character's. Using Shiny, it will be possible to create this and examine each character in detail
+
+
+## Simple Analytics
+Break down by season, by episode, (and by time) index within the episode.
+
+Step 1 - Clean data, filter our the non-dialogue entries.
+Step 2 - Mutate Season and Episode_Num into a factor variable.
+Step 3 - Semantic Analysis for all episodes.
+Step 4 - Visualise. Line chart or column chart for sentiment. Aggregate, or positive and negative as separate bars.
+Step 5 - Summarise and analyse verablly.
+
+Term Frequency - By season
+
+Term Relevance - By season ~facet_wrapping to see all 4
+
+Frequency of characters names being mentioned?
+
+## Intermediate Analytics - Requires a lot of transcription and Shiny
+
+### Transcription
+Frequency of character speech
+Frequency of characters speaking to one another
+### Code
+Shiny Browser to examine:
+
+1. Character dialogue frequency - Who speaks most?
+2. Character interaction frequency - Who interacts with whom?
+3. Sentiment of speech - How positive or negative is the character's speech?
+4. Sentiment per episode, or per season - Plot of the sentiment of an episode or a season.
+5. Word frequency - Per character, or per episode, or per season.
+
+## Challenging analytics - Requires transcription and learning new packages.
+Show character relationship networks between the primary characters
+Edge width by frequency of interaction (Single episode? Cumulative Total? Weighted, so more recent matters more than less recent? Weight so a one-episode-wonder is less important than a recurring character?)
+Edge color by sentiment of the relationship? (Same weighting issues)
+
+
+---
+
+## Reference Notes
+http://tidytextmining.com
+https://cran.r-project.org/web/packages/network/vignettes/networkVignette.pdf
+https://briatte.github.io/ggnet/
