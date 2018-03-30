@@ -78,8 +78,8 @@ Shiny Browser to examine:
 
 ## Reference Notes
 
-http://tidytextmining.com
-https://cran.r-project.org/web/packages/network/vignettes/networkVignette.pdf
-https://briatte.github.io/ggnet/
-http://tamaszilagyi.com/blog/a-tidy-text-analysis-of-rick-and-morty/
+* http://tidytextmining.com
+* https://cran.r-project.org/web/packages/network/vignettes/networkVignette.pdf
+* https://briatte.github.io/ggnet/
+* http://tamaszilagyi.com/blog/a-tidy-text-analysis-of-rick-and-morty/
 
