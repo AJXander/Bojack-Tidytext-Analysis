@@ -68,8 +68,6 @@ tidy_bojack %>% count(word, sort = T) %>% arrange(word, desc(n)) %>% top_n(10) %
         ggtitle("Bojack Horseman - Term Frequency Plot", "All Seasons")
 ```
 
-    ## Selecting by n
-
 ![](Frequency_Analysis_files/figure-gfm/General%20Term%20Frequency%20Plot-1.png)<!-- -->
 
 Not too surprising for raw frequency. The main character’s name is
@@ -93,8 +91,6 @@ tidy_bojack %>% filter(!word %in% c("bojack","diane","peanutbutter","todd")) %>%
         ggtitle("Bojack Horseman - Term Frequency Plot", "All Seasons - Character Names Dropped")
 ```
 
-    ## Selecting by n
-
 ![](Frequency_Analysis_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 This is quite interesting as the general terms seem non-specific.
@@ -114,8 +110,6 @@ tidy_bojack %>% mutate(season = factor(season, levels = c("Bojack S1 SRT", "Boja
         guides(fill = FALSE) +
         ggtitle("Bojack Horseman - Term Frequency Plot", "Divided by Season")
 ```
-
-    ## Selecting by n
 
 ![](Frequency_Analysis_files/figure-gfm/Season-specific%20Term%20Frequency%20Plot-1.png)<!-- -->
 
@@ -137,8 +131,6 @@ tidy_bojack %>% mutate(season = factor(season, levels = c("Bojack S1 SRT", "Boja
         guides(fill = FALSE) +
         ggtitle("Bojack Horseman - Term Frequency Plot", "Divided by Season, Character Names Dropped")
 ```
-
-    ## Selecting by n
 
 ![](Frequency_Analysis_files/figure-gfm/Season-specific%20Term%20Frequency%20Plot%20No%20Characters-1.png)<!-- -->
 
