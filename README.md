@@ -27,7 +27,7 @@ I found unofficial SRT files of the show, which provides time-stamped dialogue t
 
 This transcription has some issues, including spelling errors and misunderstood dialogue; credits to the users who created the subtitles; overlapping two characters' dialogue into a single observation; and no indication of who has spoken which line.
 
-[Data Import Page](Data_Import.Rmd)
+[Data Import](Data_Import.md)
 
 ## Transcription
 
@@ -42,8 +42,8 @@ Break down by season, by episode, (and by time) index within the episode.
 4. Visualise. Line chart or column chart for sentiment. Aggregate, or positive and negative as separate bars.
 5. Summarise and analyse.
 
-[Term Frequency](Frequency_Analysis.Rmd)
-* Term Relevance - By season
+[Term Frequency](Frequency_Analysis.md)
+[Term Importance](TFIDF.md)
 * Frequency of characters names being mentioned?
 
 ## Intermediate Analytics
