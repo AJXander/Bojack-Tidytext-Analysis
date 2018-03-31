@@ -43,8 +43,10 @@ Break down by season, by episode, (and by time) index within the episode.
 5. Summarise and analyse.
 
 [Term Frequency](Frequency_Analysis.md)
+
 [Term Importance](TFIDF.md)
-* Frequency of characters names being mentioned?
+
+[Major Character Frequency](CharacterFreq.md)
 
 ## Intermediate Analytics
 
