@@ -14,10 +14,6 @@ I then intend to develop a Shiny app to interactively examine the episodes. It i
 
 My ultimate goal is to develop a network map, indicating the fluctuating relationships of characters over time.
 
-I have created a summary page to show what I have completed to date, and the overall findings  I can draw from the data:
-[Summary](Summary.md)
-
-
 ## Introduction
 
 The initial inspiration was the [Tidy Text Mining](https://www.tidytextmining.com/tidytext.html) package and the associated course on [Datacamp](https://www.datacamp.com/courses/sentiment-analysis-in-r-the-tidy-way). In addition to this, an intense course with [Eduardo Ariño de la Rubia](https://github.com/earino) on Unstructured Text Analysis, at CEU in Budapest, gave further direction.
@@ -53,21 +49,23 @@ Break down by season, by episode, (and by time) index within the episode.
 
 ## Intermediate Analytics
 
-### Dependent on Transcription
+[Character Interaction Chord Diagram](CircularMap.md)
 
-Frequency of character speech
-Frequency of characters speaking to one another
-
-
-### Dependent on Code
+[Shiny Application](http://ajxander.shinyapps.io/bojackscanner)
 
 Shiny Browser to examine:
 
 1. Character dialogue frequency - Who speaks most?
 2. Character interaction frequency - Who interacts with whom?
 3. Sentiment of speech - How positive or negative is the character's speech?
-4. Sentiment per episode, or per season - Plot of the sentiment of an episode or a season.
-5. Word frequency - Per character, or per episode, or per season.
+
+This iteration of the app is still far below the original aspiration, but represents a minimum viable product, with the ability to see the chord diagram, to examine a character's top 3 interactions, and to look at the positive/negative sentiment of the character's speech.
+
+This is far below the original goal, and there are several glaring issues.
+
+The first and most relevant is the fact that the sentiment plots are relatively uninformative in isolation. While they reflect the use of Shiny inputs to create reactive graphs, they do __not__ provide information in the most informative way. This stands to be improved significantly. A gross plot of positive and negative language does not consider the interaction with other characters or the overall plot arc of an episode or season.
+
+Additionally, the app is only of minor use until further transcription efforts can be completed. With only 4 episodes manually transcribed, character interactions are limited as the early episodes establish character dynamics and contexts.
 
 ## Challenging analytics - Dependent on Transcription, Learning New Packages, and Network Science
 
