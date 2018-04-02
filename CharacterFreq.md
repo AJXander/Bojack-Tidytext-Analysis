@@ -56,7 +56,7 @@ tidy_bojack %>% filter(word %in% c("bojack", "peanutbutter", "carolyn", "diane",
 ![](CharacterFreq_files/figure-gfm/Character%20Name%20Frequency%20Plot%20Divded%20By%20Season-1.png)<!-- -->
 
 This plot shows how the show has evolved from a single focus to an
-enemble cast.
+ensemble cast.
 
 Bojack, Diane, and Todd, have all declined in frequency over the course
 of the series, while Mister Peanutbutter and Princess Carolyn have risen

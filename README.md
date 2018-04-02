@@ -12,7 +12,7 @@ I am determining how best to do this, including numbering conversations, and ide
 
 I then intend to develop a Shiny app to interactively examine the episodes. It is unrealistic to specifically produce each episode's summary analysis, and each character's sentiment per episode. Using Shiny, it will be possible to create this dynamically, and examine each character or episode in detail. One could potentially create this in full, but the resulting document would be long, repetitive, and inefficient in its displaying of data.
 
-My ultimate goal is to develop a network map, indicating the fluctuating relationships of characters over time.
+My ultimate goal is to develop a dynamic network map, displaying the fluctuating relationships of characters over time.
 
 ## Introduction
 
