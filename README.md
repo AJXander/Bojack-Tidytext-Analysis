@@ -10,7 +10,7 @@ Initially, I will run simple analytics on the entirety of the SRT files.
 Subsequently, I will watch each episode, annotating the CSV files manually with the speaker and listeners to each line.
 I am determining how best to do this, including numbering conversations, and identifying cutaway scenes such as flashbacks, or humorous asides.
 
-I then intend to develop a Shiny app to interactively examine the episodes. It is unrealistic to specifically produce each episode's summary analysis, and each character's. Using Shiny, it will be possible to create this and examine each character in detail.
+I then intend to develop a Shiny app to interactively examine the episodes. It is unrealistic to specifically produce each episode's summary analysis, and each character's sentiment per episode. Using Shiny, it will be possible to create this dynamically, and examine each character or episode in detail. One could potentially create this in full, but the resulting document would be long, repetitive, and inefficient in its displaying of data.
 
 My ultimate goal is to develop a network map, indicating the fluctuating relationships of characters over time.
 
