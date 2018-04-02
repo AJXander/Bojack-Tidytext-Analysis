@@ -14,6 +14,9 @@ I then intend to develop a Shiny app to interactively examine the episodes. It i
 
 My ultimate goal is to develop a network map, indicating the fluctuating relationships of characters over time.
 
+I have created a summary page to show what I have completed to date, and the overall findings  I can draw from the data:
+[Summary](Summary.md)
+
 
 ## Introduction
 
